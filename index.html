@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artistian Vault - Discover the Essence of India</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Artistian Vault</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Categories">Categories</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cart.html" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover the Essence of India</h1>
+      <p>Authentic, Handmade, and Culturally Rich Products</p>
+      <a href="#shop" class="cta-button">Shop Now</a>
+    </div>
+  </section>
+
+  <section class="featured-categories" id="Categories">
+    <h2>Featured Categories</h2>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="assets/traditional-clothing.jpg" alt="Traditional Clothing">
+        <h3>Traditional Clothing</h3>
+      </div>
+      <div class="category-card">
+        <img src="assets/handicrafts.jpg" alt="Handicrafts">
+        <h3>Handicrafts</h3>
+      </div>
+      <div class="category-card">
+        <img src="assets/jewelry.jpg" alt="Jewelry">
+        <h3>Jewelry</h3>
+      </div>
+      <div class="category-card">
+        <img src="assets/home-decor.jpg" alt="Home Decor">
+        <h3>Home Decor</h3>
+      </div>
+      <div class="category-card">
+        <img src="assets/spices-food.jpg" alt="Spices & Food">
+        <h3>Spices & Food</h3>
+      </div>
+      <div class="category-card">
+        <img src="assets/musical-instruments.jpg" alt="Musical Instruments">
+        <h3>Musical Instruments</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular-products" id=shop>
+    <h2>Popular Products</h2>
+    <div class="product-carousel">
+      <div class="product-card">
+        <img src="assets/product1.jpg" alt="Product 1">
+        <h3>Clothes</h3>
+        <p>₹20.00</p>
+        <button onclick="addToCart('Clothes', 20.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="assets/product2.jpg" alt="Product 2">
+        <h3>Statue</h3>
+        <p>₹25.00</p>
+        <button onclick="addToCart('Statue', 25.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="assets/product3.jpg" alt="Product 3">
+        <h3>Handicraft</h3>
+        <p>₹30.00</p>
+        <button onclick="addToCart('Handicraft', 30.00)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cultural-stories">
+    <h2>Meet Our Artisans</h2>
+    <div class="stories-grid">
+      <div class="story-card">
+        <img src="assets/art1.jpg" alt="Artisan 1">
+        <h3>Mahendra</h3>
+        <p>Brief description about the artisan and their craft.</p>
+        <a href="#read-more">Read More</a>
+      </div>
+      <div class="story-card">
+        <img src="assets/art2.jpg" alt="Artisan 2">
+        <h3>Subramanian</h3>
+        <p>Brief description about the artisan and their craft.</p>
+        <a href="#read-more">Read More</a>
+      </div>
+      <div class="story-card">
+        <img src="assets/art3.jpg" alt="Artisan 3">
+        <h3>Pranab</h3>
+        <p>Brief description about the artisan and their craft.</p>
+        <a href="#read-more">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-carousel">
+      <div class="testimonial-card">
+        <p>"Amazing products! The quality is fantastic, and the cultural touch is beautiful."</p>
+        <h3>Aarav</h3>
+      </div>
+      <div class="testimonial-card">
+        <p>"I love the unique selection of handmade items. It's my go-to place for gifts."</p>
+        <h3>Sanya</h3>
+      </div>
+      <div class="testimonial-card">
+        <p>"Excellent service and fast shipping. Highly recommend Artistian Vault."</p>
+        <h3>Vihaan</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-highlights" id="blog">
+    <h2>From Our Blog</h2>
+    <div class="blog-grid">
+        <div class="blog-card">
+            <img src="assets/blog1.jpg" alt="Traditional Handicrafts">
+            <h3>The Art of Traditional Indian Handicrafts</h3>
+            <p>Explore the rich history and techniques of Indian handicrafts, passed down through generations.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog-card">
+            <img src="assets/blog2.jpg" alt="Handmade Jewelry">
+            <h3>The Beauty of Handmade Indian Jewelry</h3>
+            <p>Discover the intricate designs and cultural significance behind handmade Indian jewelry.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog-card">
+            <img src="assets/blog3.jpg" alt="Festivals and Crafts">
+            <h3>Indian Festivals and Their Unique Crafts</h3>
+            <p>Learn about the crafts that are integral to Indian festivals and celebrations.</p>
+            <a href="#">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter" id="contact">
+    <h2>Stay Connected with Artistian Vault</h2>
+    <form id="contactForm">
+      <input type="email" placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#support">Customer Support</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#facebook">Facebook</a></li>
+          <li><a href="#instagram">Instagram</a></li>
+          <li><a href="#twitter">Twitter</a></li>
+          <li><a href="#pinterest">Pinterest</a></li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Address: 123 Desi St, Culture City, India</p>
+        <p>Email: info@Artistian Vault.com</p>
+        <p>Phone: +91 12345 67890</p>
+      </div>
+      <div class="payment-methods">
+        <h3>We Accept</h3>
+        <ul>
+          <li><img src="assets/visa.png" alt="Visa"></li>
+          <li><img src="assets/mastercard.png" alt="MasterCard"></li>
+          <li><img src="assets/paypal.png" alt="PayPal"></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div id="notification" class="notification"></div>
+
+  <script src="./js/scripts.js"></script>
+</body>
+</html>
